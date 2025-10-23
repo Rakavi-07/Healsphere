@@ -1,0 +1,125 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Main body styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f; /* Dark blue background */
+    color: #e2e8f0; /* Light text color */
+    overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #112240;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #233554;
+}
+
+.logo {
+    color: #64ffda;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #64ffda;
+}
+
+/* Main layout container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* CHANGED - Reduced padding */
+    gap: 30px; /* CHANGED - Reduced space between items */
+    min-height: calc(100vh - 85px);
+}
+
+/* Doctor image card */
+.doctor-card {
+    background: #112240;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid #233554;
+}
+
+.doctor-img {
+    width: 500px; /* CHANGED - Increased image size */
+    height: auto;
+    display: block;
+}
+
+/* Dashboard text & grid */
+.dashboard-content {
+    max-width: 750px; /* CHANGED - Increased width */
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.username {
+    color: #64ffda;
+}
+
+.subtitle {
+    color: #a8b2d1;
+    font-size: 18px;
+    margin-bottom: 30px; /* CHANGED - Reduced margin */
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.btn {
+    background: #233554;
+    border: 1px solid #3b4d6e;
+    color: #ccd6f6;
+    padding: 25px; /* CHANGED - Increased padding for bigger buttons */
+    border-radius: 15px;
+    font-size: 18px; /* CHANGED - Increased font size */
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-height: 160px; /* CHANGED - Increased button height */
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: #3b4d6e;
+}
+
+.btn .icon {
+    font-size: 48px; /* CHANGED - Larger icon size */
+}
+
+/* Special button colors */
+.btn.refill { background-color: #e63946; border-color: #e63946; color: #fff; }
+.btn.emergency { background-color: #d62828; border-color: #d62828; color: #fff; }
+.btn.settings { background-color: #457b9d; border-color: #457b9d; color: #fff; }
